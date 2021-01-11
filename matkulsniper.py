@@ -79,3 +79,5 @@ x = list(divide_chunks(Kuota, 2))
 for i in range (0,len(x)):
     print('K'+str(i+1)+':')
     print(x[i][0] + ' '+ x[i][1])
+    if(int(x[i][0][-2:])-int(x[i][1][-2:])>0):
+        print('\033[0;32mSpace available at K'+str(i+1)+'! GOGOGOGOGOGOO\033[0;37m')
