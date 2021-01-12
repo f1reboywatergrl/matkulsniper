@@ -88,6 +88,8 @@ while True:
             print('\033[0;32mSpace available at K'+str(i+1)+'! GOGOGOGOGOGOO\033[0;37m')
             msg.showinfo('ADA SELOT WOY!', 'GECE ADA SLOT DI K'+str(i+1))
 
-        print('Restarting Program in 10 seconds.\n\n')
+    n=10
 
-        time.sleep(10)
+    print('Restarting Program in '+str(n)+' seconds.\n\n')
+
+    time.sleep(n)
