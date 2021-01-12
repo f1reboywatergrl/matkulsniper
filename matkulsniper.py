@@ -4,6 +4,9 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import mechanize
 import re
+import time
+from tkinter import *
+import tkinter.messagebox as msg
 
 print('Matkul Sniper by Gondok')
 
@@ -81,3 +84,8 @@ for i in range (0,len(x)):
     print(x[i][0] + ' '+ x[i][1])
     if(int(x[i][0][-2:])-int(x[i][1][-2:])>0):
         print('\033[0;32mSpace available at K'+str(i+1)+'! GOGOGOGOGOGOO\033[0;37m')
+        msg.showinfo('ADA SELOT WOY!', 'GECE ADA SLOT DI K'+str(i+1))
+
+    print('Restarting Program in 10 seconds.\n\n')
+
+    time.sleep(10)
